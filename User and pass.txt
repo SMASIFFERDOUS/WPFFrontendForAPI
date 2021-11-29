@@ -1,0 +1,3 @@
+user ID: wahida
+password: password
+http://3.98.127.36:8081/api/StorageInfoes
