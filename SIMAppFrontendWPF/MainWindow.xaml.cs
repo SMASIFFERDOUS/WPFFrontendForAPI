@@ -34,7 +34,7 @@ namespace SIMAppFrontendWPF
         //##################################################
         private void Filtered_entry_Click(object sender, RoutedEventArgs e)
         {           
-            string getByIdRequestString = "http://3.98.127.36:8081/api/StorageInfoes/";
+            string getByIdRequestString = "http://loadbalancersimapp-1920567156.ca-central-1.elb.amazonaws.com/api/StorageInfoes/";
             int userid = 0;
             try
             {
@@ -71,7 +71,7 @@ namespace SIMAppFrontendWPF
         private void New_entry_Click(object sender, RoutedEventArgs e)
         {
             string data01 = tb_user_input.Text;
-            string url = "http://3.98.127.36:8081/api/StorageInfoes/";
+            string url = "http://loadbalancersimapp-1920567156.ca-central-1.elb.amazonaws.com/api/StorageInfoes/";
             string contentType = "text/json";
             string method1 = "POST";
             try
@@ -103,7 +103,7 @@ namespace SIMAppFrontendWPF
             try
             {
 
-                string jString = Get("http://3.98.127.36:8081/api/StorageInfoes/");
+                string jString = Get("http://loadbalancersimapp-1920567156.ca-central-1.elb.amazonaws.com/api/StorageInfoes/");
                 txtbox.Text = jString;
                 //storageinfo empObj = new storageinfo();
                 //empObj = JsonConvert.DeserializeObject<storageinfo>(jsonString);
@@ -128,7 +128,7 @@ namespace SIMAppFrontendWPF
         private void del_entry_Click(object sender, RoutedEventArgs e)
         {
             string data01 = tb_del_entry_id.Text;
-            string url = "http://3.98.127.36:8081/api/StorageInfoes/";
+            string url = "http://loadbalancersimapp-1920567156.ca-central-1.elb.amazonaws.com/api/StorageInfoes/";
             string contentType = "text/json";
             string method1 = "DELETE";
             try
@@ -161,7 +161,7 @@ namespace SIMAppFrontendWPF
         private void Edit_entry_Click(object sender, RoutedEventArgs e)
         {
             string data01 = tb_user_input.Text;
-            string url = "http://3.98.127.36:8081/api/StorageInfoes/";
+            string url = "http://loadbalancersimapp-1920567156.ca-central-1.elb.amazonaws.com/api/StorageInfoes/";
             string contentType = "text/json";
             string method1 = "PUT";
             try
