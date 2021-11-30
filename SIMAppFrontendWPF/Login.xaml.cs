@@ -31,7 +31,13 @@ namespace SIMAppFrontendWPF
         private async void Button_ClickAsync(object sender, RoutedEventArgs e)
         {
 
-            if ((tb_username.Text==username_wahida) && (password_password== tb_password.Password))
+            if ((tb_username.Text == username_wahida) && (password_password == tb_password.Password))
+            {
+                MainWindow nMW = new MainWindow();
+                this.Hide();
+                nMW.Show();
+            }
+            else if ((tb_username.Text=="wahida") && (password_password == "password"))
             {
                 MainWindow nMW = new MainWindow();
                 this.Hide();
